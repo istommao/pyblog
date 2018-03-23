@@ -10,3 +10,13 @@ class IndexView(TemplateView):
 class ArticleDetailView(TemplateView):
 
     template_name = 'front/detail.html'
+
+
+class ColumnListView(TemplateView):
+
+    template_name = 'front/column/index.html'
+
+
+class CollectorListView(TemplateView):
+
+    template_name = 'front/collector/index.html'

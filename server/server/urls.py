@@ -21,6 +21,8 @@ from server import views
 urlpatterns = [
     path('', views.IndexView.as_view()),
     path('detail/', views.ArticleDetailView.as_view()),
+    path('collector/', views.CollectorListView.as_view()),
+    path('column/', views.ColumnListView.as_view()),
 
     path('admin/', admin.site.urls)
 ]

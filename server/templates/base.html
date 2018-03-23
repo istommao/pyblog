@@ -16,70 +16,48 @@
     <div class="fly-header layui-bg-black">
         <div class="layui-container">
           <a class="fly-logo" href="/"> <img src="{% static 'res/images/logo2.png' %}" alt="layui"></a>
-    {% block topnav %}
-            <ul class="layui-nav fly-nav layui-hide-xs">
-                <li class="layui-nav-item layui-this">
-                    <a href="/"><i class="iconfont icon-daima"></i>专栏</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="case/case.html"><i class="iconfont icon-jiazaizhong"></i>收藏家</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-touxiang"></i>关于</a>
-                </li>
-            </ul>
+            {% block topnav %}
+                {% include 'topnav.html' %}
             {% endblock topnav %}
             <ul class="layui-nav fly-nav-user">
             </ul>
         </div>
     </div>
-    <div class="fly-panel fly-column">
-        <div class="layui-container">
-            <ul class="layui-clear">
-                <li class="layui-hide-xs layui-this"><a href="/">首页</a></li>
-                <li><a href="#">其他</a></li>
-            </ul>
 
-        </div>
-    </div>
+    {% block topPanel %}{% endblock topPanel %}
+
     <div class="layui-container">
         <div class="layui-row layui-col-space15">
-            {% block mainer %} {% block leftBlock %} {% endblock leftBlock %} {% block rightBlock %}
-            <div class="layui-col-md4">
-                <dl class="fly-panel fly-list-one">
-                    <dt class="fly-panel-title">本周热门</dt>
-                    <dd>
-                        <a href="jie/detail.html">python socket 编程</a>
-                        <span><i class="iconfont icon-pinglun1"></i> 16</span>
-                    </dd>
-                </dl>
-                <div class="fly-panel fly-link">
-                    <h3 class="fly-panel-title">友情链接</h3>
-                    <dl class="fly-panel-main">
-                        <dd><a href="https://www.peachis.me/" target="_blank">peach</a></dd>
-                    </dl>
-                </div>
-            </div>
-            {% endblock rightBlock %} {% endblock mainer %}
+            {% block mainer %}
+                {% block leftBlock %} {% endblock leftBlock %}
+
+                {% block rightBlock %}
+                {% include 'rightblock.html' %}
+                {% endblock rightBlock %}
+            {% endblock mainer %}
         </div>
     </div>
-    <div class="fly-footer">
-        <p><a href="#" target="_blank">pyblog</a> 2017 &copy; <a href="#" target="_blank">codingcat</a></p>
-        <p>
-            <a href="#" target="_blank">python</a>
-        </p>
-    </div>
-    <script src="{% static 'res/layui/layui.js' %}"></script>
-    <script>
-    layui.cache.page = '';
-    layui.cache.user = {
-        username: '游客',
-        uid: -1,
-        avatar: '{% static "res/images/avatar/00.jpg" %}',
-        experience: 83,
-        sex: '男'
-    };
 
+    <div class="footer">
+        <p><a href="/">编程猫</a> 2018 &copy; <a href="https://codingcat.top/">codingcat.top</a></p>
+    </div>
+
+    <script src="{% static 'res/layui/layui.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script>
+    $(function(){
+        function footerPosition(){
+            $(".footer").removeClass("fixed-bottom");
+            var contentHeight = document.body.scrollHeight,//网页正文全文高度
+                winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
+            if(!(contentHeight > winHeight)){
+                //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+                $(".footer").addClass("fixed-bottom");
+            }
+        }
+        footerPosition();
+        $(window).resize(footerPosition);
+    });
     </script>
     <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30088308'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30088308' type='text/javascript'%3E%3C/script%3E"));</script>-->
 </body>

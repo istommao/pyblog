@@ -1,0 +1,43 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block topPanel %}
+<div class="fly-panel fly-column">
+    <div class="layui-container">
+        <ul class="layui-clear">
+            <li class="layui-hide-xs layui-this"><a href="/">安全类</a></li>
+            <li><a href="#">个人博客</a></li>
+            <li><a href="#">IT资讯</a></li>
+            <li><a href="#">OJ平台</a></li>
+            <li><a href="#">MOOC</a></li>
+            <li><a href="#">在线工具</a></li>
+            <li><a href="#">技术社区</a></li>
+        </ul>
+
+    </div>
+</div>
+{% endblock topPanel %}
+
+{% block mainer %}
+    <div class="fly-case-list">
+        <div class="cardCover">
+            <a href="#" target="_blank" rel="nofollow">
+                <div class="cardBox">
+                    <div class="box">
+                        <div class="boxImg"><img src="https://codingcat.top/media/info/20180212/3a2e4447c2d9b10ada48ac76aa98aba1.jpg"></div>
+                        <div class="boxContent">
+                            <p class="boxTitle" title="计算机网络">计算机网络</p>
+                            <p class="boxDesc" title="计算机网络">计算机网络</p>
+                            <div class="boxBottom">
+                                <div class="bottom-box clearfix">
+                                    <div class="evaluation-box l">
+                                        <div class="author-info"><span>codingcat</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+{% endblock mainer %}
