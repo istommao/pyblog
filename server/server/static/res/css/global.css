@@ -478,6 +478,7 @@ body .fly-user-main{position: relative; min-height: 600px;}
 .fly-case-img:hover .layui-btn{display: inline-block;}
 .fly-case-list li h2{padding: 10px 0 5px; line-height: 22px; font-size: 18px; white-space: nowrap; overflow: hidden; text-align: center;}
 .fly-case-desc{height: 60px; line-height: 20px; font-size: 14px; color: #666; overflow: hidden;}
+.fly-case-descv2{line-height: 20px;margin-top: 15px; font-size: 14px; color: #666; overflow: hidden;}
 .fly-case-info{position: relative; margin: 10px 0 0; padding: 10px 65px 0 45px; border-top: 1px dotted #eee;}
 .fly-case-info p{height:24px; line-height: 24px;}
 .fly-case-user{position: absolute; left: 0; top: 15px; width: 35px; height: 35px;}
