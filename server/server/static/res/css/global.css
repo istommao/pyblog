@@ -95,7 +95,7 @@ i{font-style: normal;}
 a:hover{color: #1EA3FD; transition: all .3s;}
 pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid #1EA3FD;  background-color: #f8f8f8; font-family: Courier New; overflow: auto;}
 
-.layui-container{padding: 0;}
+.layui-container{padding: 0;margin-bottom: 50px;overflow: hidden;}
 .fly-main{width: 1079px; min-height: 600px; margin: 0 auto 15px;}
 .layui-badge{height: 20px; line-height: 20px; border-radius: 2px;}
 
@@ -467,7 +467,7 @@ body .fly-user-main{position: relative; min-height: 600px;}
 .fly-case-tab .tab-this{background-color: #1EA3FD; color: #fff;}
 
 .fly-case-list{margin-top: 15px; font-size: 0;}
-.fly-case-list li, 
+.fly-case-list li,
 .layer-ext-ul li{display: inline-block; vertical-align: middle; *display: inline; *zoom:1; font-size: 14px; background-color: #fff;}
 .fly-case-list{width: 110%;}
 .fly-case-list li{width: 239px; margin: 0 15px 15px 0; padding: 10px;}
@@ -652,13 +652,13 @@ body .fly-user-main{position: relative; min-height: 600px;}
 
 .footer {
     margin: 30px 0 0;
-    padding: 30px 0;
-    line-height: 30px;
+    height: 100px;
+    line-height: 100px;
     text-align: center;
     color: #737573;
-    border-top: 1px solid #e2e2e2;
     background-color: #393D49;
     color: white;
+    box-sizing: border-box;
 }
 
 .footer a {
@@ -670,4 +670,8 @@ body .fly-user-main{position: relative; min-height: 600px;}
 .footer a:hover {
     color: #777;
 }
-.fixed-bottom {position: fixed;bottom: 0;width:100%;}
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
