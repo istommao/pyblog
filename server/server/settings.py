@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -127,3 +128,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'server/static'),
 )
+
+DBCONF_PATH = os.path.join(BASE_DIR, 'dbconf.py')
+if os.path.exists(DBCONF_PATH):
+    sys.path.append(DBCONF_PATH)
+    import dbconf
+
+    DATABASES = dbconf.DATABASES
+else:
+    sys.stdout.write("=== Please write dbconf.py ===\n")
