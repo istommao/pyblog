@@ -20,3 +20,8 @@ class ColumnListView(TemplateView):
 class CollectorListView(TemplateView):
 
     template_name = 'front/collector/index.html'
+
+
+class CodeSnippetListView(TemplateView):
+
+    template_name = 'front/codesnippet/index.html'
