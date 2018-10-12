@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    {% block topNav %}
     <div class="fly-header layui-bg-black">
         <div class="layui-container">
           <a class="fly-logo" href="/"> <img src="{% static 'res/images/logo3.png' %}" alt="layui"></a>
@@ -23,8 +24,8 @@
             </ul>
         </div>
     </div>
-
-    {% block topPanel %}{% endblock topPanel %}
+        {% block topPanel %}{% endblock topPanel %}
+    {% endblock topNav %}
 
     <div class="layui-container">
         <div class="layui-row layui-col-space15">
@@ -38,9 +39,11 @@
         </div>
     </div>
 
+    {% block footer %}
     <div class="footer">
         <p><a href="/">编程猫</a> 2018 &copy; <a href="https://codingcat.top/">codingcat.top</a></p>
     </div>
+    {% endblock footer %}
 
     <script src="{% static 'res/layui/layui.js' %}"></script>
     <script src="{% static 'js/jquery.min.js' %}"></script>

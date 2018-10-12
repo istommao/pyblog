@@ -1,32 +1,20 @@
 {% extends 'base.html' %}{% load static %}
-{% block topPanel %}
-<div class="fly-panel fly-column">
-    <div class="layui-container">
-        <ul class="layui-clear">
-            <li class="layui-hide-xs layui-this"><a href="/">首页</a></li>
-            <li><a href="#">其他</a></li>
-        </ul>
 
-    </div>
-</div>
-{% endblock topPanel %}
+{% block topNav %}{% endblock topNav %}
 
-{% block leftBlock %}
-<div class="layui-col-md9 content detail">
+{% block mainer %}
+<div class="layui-col-md10 layui-col-md-offset1 content detail">
     <div class="fly-panel detail-box">
         <h1>文章标题</h1>
         <div class="fly-detail-info">
-            <span class="layui-badge layui-bg-green fly-detail-column">Tag</span>
-
-            <span class="fly-list-nums">
-            <a href="#comment"><i class="iconfont" title="回答">&#xe60c;</i> 66</a>
-            <i class="iconfont" title="人气">&#xe60b;</i> 55
-          </span>
+            <span class="layui-badge layui-bg-blue fly-detail-column">Tag</span>
         </div>
 
-        <div class="detail-body photos">
+        <div class="detail-body">
             内容
         </div>
     </div>
 </div>
-{% endblock leftBlock %}
+{% endblock mainer %}
+
+{% block footer %}{% endblock footer %}
