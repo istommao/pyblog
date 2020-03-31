@@ -3,4 +3,4 @@ python blog system
 
 ## screenshots
 
-![](./screenshots/home.jpg)
+![](./screenshots/detail.jpg)
