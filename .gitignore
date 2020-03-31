@@ -92,3 +92,5 @@ db.sqlite3
 .DS_Store
 
 dbconf.py
+
+local_settings.py

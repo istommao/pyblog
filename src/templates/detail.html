@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="https://cattalk.in/static/logo.ico" sizes="16x16">
+    <title>CatBlog</title>
+    <link href="{% static 'catblog/css/main.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="wrapper">
+                <div class="logo-wrapper">
+                    <a href="/">
+                        <embed type="image/gif" style="width:70px" src="{% static 'catblog/logo-min.jpeg' %}" />
+                    </a>
+                </div>
+                <div class="lists">
+                    <h4>Popular Languages</h4>
+                    <ul>
+                        <li><a href="#" class="show-loader ">C</a></li>
+                        <li><a href="#" class="show-loader ">C++</a></li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <h4>Popular Topics</h4>
+                    <ul>
+                        <li><a href="#" class="show-loader ">Algorithm</a></li>
+                        <li><a href="#" class="show-loader ">Atom</a></li>
+                        <li><a href="#" class="show-loader ">Android</a></li>
+                        <li><a href="#" class="show-loader ">Angular</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main id="main">
+            <div class="header-wrap">
+                <div class="top-header">
+                    <div class="heading">
+                        <img src="{% static 'catblog/svg/flash.svg' %}" />
+                        <h2>Popular Libraries</h2>
+                    </div>
+                    <div class="loader">
+                        <img src="{% static 'catblog/svg/loader.svg' %}" alt='loader' />
+                    </div>
+                    <div class="menu" id="menu">
+                        <img src="{% static 'catblog/svg/menu.svg' %}" />
+                    </div>
+                    <div class="search-wrapper">
+                        <form action="#" method="get" class="search-form">
+                            <input type="text" class="form-control" value="" name="search" id="search" placeholder="Seach library...">
+                            <button type="submit" class="show-loader search-submit">
+                                <img src="{% static 'catblog/svg/search.svg' %}" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="markdown">
+                <div class="repo-info-wrapper">
+                    <div class="star">
+                        <span>5.1k</span>
+                        <img src="{% static 'catblog/svg/star.svg' %}">
+                    </div>
+                    <div class="view-on">
+                        <a class="view" target="_blank" href="https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout">View on github</a>
+                    </div>
+                </div>
+                <div class="markdown-body">
+                    <h1 id="csstickyheaderflowlayout">CSStickyHeaderFlowLayout</h1>
+                    <h2 id="contributors">Contributors</h2>
+                    <p>For anyone who'd like to be a contributor to the repository, please read the <a href="https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout/wiki/Contribution-Guidelines">Contribution Guideline</a></p>
+                    <hr>
+                    <!--![](http://cl.ly/image/1D2i0746180b/1*pev9ZXJAZ2MYoF8-R_nbRA.gif)-->
+                    <p><img src="http://f.cl.ly/items/05130s2r0X1j1x1N0Q3n/spotify-48-16-half.gif" width="276">
+                        <img src="http://f.cl.ly/items/3q2u35013o0y0G2o3X1v/carshare-32-16-half.gif" width="276">
+                        <img src="http://f.cl.ly/items/3l0F1F3Y0s1M1F3a2r0d/ripple.gif" width="276"></p>
+                    <p>Parallax, Sticky Headers, Growing image heading, done right in one
+                        UICollectionViewLayout.</p>
+                    <h2 id="installation">Installation</h2>
+                    <p><a href="http://cocoadocs.org/docsets/CSStickyHeaderFlowLayout"><img src="http://cocoapod-badges.herokuapp.com/v/CSStickyHeaderFlowLayout/badge.png" alt="Version"></a>
+                        <a href="http://cocoadocs.org/docsets/CSStickyHeaderFlowLayout"><img src="http://cocoapod-badges.herokuapp.com/p/CSStickyHeaderFlowLayout/badge.png" alt="Platform"></a></p>
+                    <h3 id="cocoapods">Cocoapods</h3>
+                    <p>CSStickyHeaderFlowLayout is available through <a href="http://cocoapods.org">CocoaPods</a>, to install
+                        it simply add the following line to your Podfile:</p>
+                    <pre><code>pod "CSStickyHeaderFlowLayout"
+</code></pre>
+                    <h3 id="carthage">Carthage</h3>
+                    <p>CSStickyHeaderFlowLayout is also available with Carthage.
+                        Add <code>github "CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout"</code> to your Cartfile</p>
+                    <p>Alternatively, you can just drag the files from <code>CSStickyHeaderFlowLayout / Classes</code> into your own project.</p>
+                    <h2 id="usageswiftcode">Usage (Swift/Code)</h2>
+                    <p>Documentation is coming soon. For now please open <code>CSStickyHeaderFlowLayout.xcworkspace</code> &gt; <code>SwiftDemo</code> target.</p>
+                    <h2 id="usagecocoapodsobjectivecstoryboard">Usage (CocoaPods/Objective-C/Storyboard)</h2>
+                    <p>To run the example project; clone the repo, and run <code>pod install</code> from the Project directory first.</p>
+                    <p><strong>1. Setting up the Sticky Section Header</strong></p>
+                    <p>Configure your collection view to use <code>CSStickyHeaderFlowLayout</code>. Here's an example on how you to do it in Storyboard.</p>
+                    <p><img src="http://f.cl.ly/items/32183h2q18171k323J07/csstickyheaderflowlayout-class.jpg" alt=""></p>
+                    <p>Now all your <strong>section headers</strong> will get the sticky effect like table view. You can disable it with one line of code.</p>
+                    <pre><code class="objective-c language-objective-c">@property (nonatomic) BOOL disableStickyHeaders;
+</code></pre>
+                    <p><strong>2. Setting up the Collection View Header</strong></p>
+                    <p>We'll be using <em>supplementary views</em> for our parallax header. Here's an example on how use a nib file for that purpose:</p>
+                    <p><img src="http://f.cl.ly/items/0x1L0U2x1U0g2q2E1i3Z/header-grow.jpeg" alt=""></p>
+                    <p>Register that nib file to your collection view controller in code:</p>
+                    <pre><code class="objective-c language-objective-c">#import "CSStickyHeaderFlowLayout.h"
+
+- (void)viewDidLoad {
+
+    [super viewDidLoad];
+
+    // Locate your layout
+    CSStickyHeaderFlowLayout *layout = (id)self.collectionViewLayout;
+    if ([layout isKindOfClass:[CSStickyHeaderFlowLayout class]]) {
+        layout.parallaxHeaderReferenceSize = CGSizeMake(320, 200);
+    }
+
+    // Locate the nib and register it to your collection view
+    UINib *headerNib = [UINib nibWithNibName:@"CSGrowHeader" bundle:nil];
+    [self.collectionView registerNib:headerNib
+          forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
+                 withReuseIdentifier:@"header"];
+
+}
+</code></pre>
+                    <p>Implement <code>-[UICollectionViewDataSource collectionView:viewForSupplementaryElementOfKind:atIndexPath:]</code></p>
+                    <pre><code class="objective-c language-objective-c">- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+
+    // Check the kind if it's CSStickyHeaderParallaxHeader
+    if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
+
+        UICollectionReusableView *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                            withReuseIdentifier:@"header"
+                                                                                   forIndexPath:indexPath];
+
+        return cell;
+
+    } else if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        // Your code to configure your section header...
+    } else {
+        // other custom supplementary views
+    }
+    return nil;
+}
+</code></pre>
+                    <p>That's it. You'll be able to get the header you wanted using the best practice.</p>
+                    <p>Configuring other effects are really just the way how you setup the header cell, by combining different settings in the minimal exposed properties in <a href="https://github.com/jamztang/CSStickyHeaderFlowLayout/blob/master/Classes/CSStickyHeaderFlowLayout.h">CSStickyHeaderFlowLayout.h</a></p>
+                    <pre><code class="objective-c language-objective-c">@property (nonatomic) CGSize parallaxHeaderReferenceSize;
+@property (nonatomic) CGSize parallaxHeaderMinimumReferenceSize;
+@property (nonatomic) BOOL disableStickyHeaders;
+</code></pre>
+                    <p>Run the project examples and it'll shows you exactly how you achieve different effects.</p>
+                    <p><img src="http://f.cl.ly/items/313D2n3R0H0e0x090B3X/different-header.jpeg" alt=""></p>
+                    <h2 id="updates">Updates</h2>
+                    <ul>
+                        <li>
+                            <p>0.2.11: Add support for carthage.</p>
+                        </li>
+                        <li>
+                            <p>0.2.10: Fixed issue because attributes were not copied and datasource might have been niled</p>
+                        </li>
+                        <li>
+                            <p>0.2.9: Remove Supplementry Header Layout Attribute to prevent crash when returning nil and while is CGSizeZero</p>
+                        </li>
+                        <li>
+                            <p>0.2.8: Fixed a visual issue when animating contentInsets #85 and crash when dragging cells #69</p>
+                        </li>
+                        <li>
+                            <p>0.2.7: Fixed scroll indicator covered by cell</p>
+                        </li>
+                        <li>
+                            <p>0.2.6: Fixing that section header being covered by cell after perform batch update</p>
+                        </li>
+                        <li>
+                            <p>0.2.5: Fixing a crash when quickly popping back to a view controller using the parallax header</p>
+                        </li>
+                        <li>
+                            <p>0.2.4: Possibly fix for a crash when parallaxHeaderReferenceSize is changed</p>
+                        </li>
+                        <li>
+                            <p>0.2.3: Enabled iPhone 6 screen sizes, reverted a patch and fixed a visual bug and content tapping bug.</p>
+                        </li>
+                        <li>
+                            <p>0.2.2: Fix 1px header and zIndex problem, thanks
+                                <a href="https://github.com/m1entus">@m1entus</a> and <a href="https://github.com/Xyand">@Xyand</a></p>
+                        </li>
+                        <li>
+                            <p>0.2.1: Fix crash on reloadData in collection view when header is offscreen, thanks <a href="https://github.com/jessesquires">@jessesquires</a></p>
+                        </li>
+                        <li>
+                            <p>0.2: Added custom UICollectionViewLayoutAttributes to support more advanced example (Spotify App)</p>
+                        </li>
+                        <li>
+                            <p>0.1.1: Minor fixes for default number of sections, thanks <a href="https://github.com/miwillhite">@miwillhite</a></p>
+                        </li>
+                        <li>
+                            <p>0.1: Initial Release</p>
+                        </li>
+                    </ul>
+                    <h2 id="whosusingit">Who's using it?</h2>
+                    <p>We've a <a href="https://github.com/jamztang/CSStickyHeaderFlowLayout/wiki">wiki page</a> for that, feel free to add your projects there!</p>
+                    <h2 id="requirements">Requirements</h2>
+                    <ul>
+                        <li>Xcode 5</li>
+                        <li>iOS 7 (I haven't really test on iOS 6 but it should work if you're using iOS 6 compatible Storyboard)</li>
+                    </ul>
+                    <h2 id="author">Author</h2>
+                    <p>James Tang, j@jamztang.com</p>
+                    <h2 id="license">License</h2>
+                    <p>CSStickyHeaderFlowLayout is available under the MIT license. See the LICENSE file for more info.</p>
+                </div>
+            </div>
+            <footer class="footer-wrapper">
+                <div class="copy-write">
+                    <p>Designed and developed by <a href="#" target="_blank">Amit Mishra</a></p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="social-share-wrapper">
+        <div class="share-btn">
+            <img src="{% static 'catblog/svg/share.svg' %}" />
+        </div>
+        <ul id="share">
+            <li>
+                <a data-type="twitter" class="twitter" href="#" onclick="popup(this);return false;">
+                    <img src="{% static 'catblog/svg/twitter.svg' %}" />
+                </a>
+            </li>
+            <li>
+                <a data-type="facebook" class="facebook" href="#" onclick="popup(this);return false;">
+                    <img src="{% static 'catblog/svg/facebook.svg' %}" />
+                </a>
+            </li>
+            <li>
+                <a data-type="google" class="google" href="#" onclick="popup(this);return false;">
+                    <img src="{% static 'catblog/svg/google.svg' %}" />
+                </a>
+            </li>
+            <div class="share-bg"></div>
+        </ul>
+    </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script async type="text/javascript" src="{% static 'catblog/scripts/common.js' %}"></script>
+</body>
+
+</html>

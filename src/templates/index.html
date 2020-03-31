@@ -1,0 +1,256 @@
+{% load static %}<!DOCTYPE html>
+<html lang="zh-Hans">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="https://cattalk.in/static/logo.ico" sizes="16x16">
+    <title>CatBlog</title>
+    <link href="{% static 'catblog/css/main.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="wrapper">
+                <div class="logo-wrapper">
+                    <a href="/">
+                        <embed type="image/gif" style="width:70px" src="{% static 'catblog/logo-min.jpeg' %}" />
+                    </a>
+                </div>
+                <div class="lists">
+                    <h4>Popular Languages</h4>
+                    <ul>
+                        <li><a href="#" class="show-loader ">C</a></li>
+                        <li><a href="#" class="show-loader ">C++</a></li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <h4>Popular Topics</h4>
+                    <ul>
+                        <li><a href="#" class="show-loader ">Algorithm</a></li>
+                        <li><a href="#" class="show-loader ">Atom</a></li>
+                        <li><a href="#" class="show-loader ">Android</a></li>
+                        <li><a href="#" class="show-loader ">Angular</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main id="main">
+            <div class="header-wrap">
+                <div class="top-header">
+                    <div class="heading">
+                        <img src="{% static 'catblog/svg/flash.svg' %}" />
+                        <h2>Popular Libraries</h2>
+                    </div>
+                    <div class="loader">
+                        <img src="{% static 'catblog/svg/loader.svg' %}" alt='loader' />
+                    </div>
+                    <div class="menu" id="menu">
+                        <img src="{% static 'catblog/svg/menu.svg' %}" />
+                    </div>
+                    <div class="search-wrapper">
+                        <form action="#" method="get" class="search-form">
+                            <input type="text" class="form-control" value="" name="search" id="search" placeholder="Seach library...">
+                            <button type="submit" class="show-loader search-submit">
+                                <img src="{% static 'catblog/svg/search.svg' %}" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="total-result">
+                    <p>util <span>(found 130,862 repositories)<span></p>
+                </div>
+                <div class="filter-wrapper">
+                    <span>Sort by</span>
+                    <div class="option-wrapper" id="option-wrapper">
+                        <div class="selected">Best Match</div>
+                        <div class="icon">
+                            <embed type="image/svg+xml" src="{% static 'catblog/svg/arrow.svg' %}" />
+                        </div>
+                    </div>
+                    <div class="options">
+                        <ul id="option-list">
+                            <li>
+                                <a href="#" class="show-loader active">
+                                    Best Match
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="show-loader ">
+                                    Most Stars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="show-loader ">
+                                    Most Forks
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="show-loader ">
+                                    Recently Updated
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-section clearfix">
+                    <div class="card-container">
+                        <header>
+                            <div class="logo">
+                                <img src="{% static 'catblog/logo-min.jpeg' %}" />
+                            </div>
+                            <div class="title">
+                                <a class="show-loader" href="/#">
+                                    <h4 title="googlemaps/android-maps-utils">android-maps-utils</h4>
+                                </a>
+                            </div>
+                            <div class="star-bg"></div>
+                            <div class="star">
+                                <span>3.0k</span>
+                                <img src="{% static 'catblog/svg/star.svg' %}" />
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>Maps SDK for Android Utility Library</p>
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>
+                                    <img src="{% static 'catblog/svg/forks.svg' %}" />
+                                    <span>1.4k</span>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="{% static 'catblog/svg/github.svg' %}" class="github-view" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="view show-loader" href="#">View</a>
+                        </footer>
+                    </div>
+                    <div class="card-container">
+                        <header>
+                            <div class="logo">
+                                <img src="{% static 'catblog/logo-min.jpeg' %}" />
+                            </div>
+                            <div class="title">
+                                <a class="show-loader" href="#">
+                                    <h4 title="Kevin-Robertson/Invoke-TheHash">Invoke-TheHash</h4>
+                                </a>
+                            </div>
+                            <div class="star-bg"></div>
+                            <div class="star">
+                                <span>857</span>
+                                <img src="{% static 'catblog/svg/star.svg' %}" />
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>PowerShell Pass The Hash Utils</p>
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>
+                                    <img src="{% static 'catblog/svg/forks.svg' %}" />
+                                    <span>220</span>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="{% static 'catblog/svg/github.svg' %}" class="github-view" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="view show-loader" href="#">View</a>
+                        </footer>
+                    </div>
+                    <div class="card-container">
+                        <header>
+                            <div class="logo">
+                                <img src="{% static 'catblog/logo-min.jpeg' %}" />
+                            </div>
+                            <div class="title">
+                                <a class="show-loader" href="#">
+                                    <h4 title="lian/bitcoin-ruby">bitcoin-ruby</h4>
+                                </a>
+                            </div>
+                            <div class="star-bg"></div>
+                            <div class="star">
+                                <span>868</span>
+                                <img src="{% static 'catblog/svg/star.svg' %}" />
+                            </div>
+                        </header>
+                        <div class="body">
+                            <p>bitcoin utils and protocol in ruby.</p>
+                        </div>
+                        <footer>
+                            <ul>
+                                <li>
+                                    <img src="{% static 'catblog/svg/forks.svg' %}" />
+                                    <span>286</span>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="{% static 'catblog/svg/github.svg' %}" class="github-view" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="view show-loader" href="#">View</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pagination-wrapper">
+                    <ul class="pagination text-center">
+                        <li class="disabled"><a>
+                                <</a> </li> <li class="active"><a>1</a></li>
+                        <li><a class="show-loader" href="#">2</a></li>
+                        <li><a class="show-loader" href="#">3</a></li>
+                        <li><a class="show-loader" href="#">4</a></li>
+                        <li><a class="show-loader" href="#">5</a></li>
+                        <li class="disabled"><a>...</a></li>
+                        <li><a class="show-loader" href="#">></a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer-wrapper">
+                <div class="copy-write">
+                    <p>Designed and developed by <a href="#" target="_blank">Amit Mishra</a></p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="social-share-wrapper">
+        <div class="share-btn">
+            <img src="{% static 'catblog/svg/share.svg' %}" />
+        </div>
+        <ul id="share">
+            <li>
+                <a data-type="twitter" class="twitter" href="#" onclick="popup(this);return false;">
+                    <img src="{% static 'catblog/svg/twitter.svg' %}" />
+                </a>
+            </li>
+            <li>
+                <a data-type="facebook" class="facebook" href="#" onclick="popup(this);return false;">
+                    <img src="{% static 'catblog/svg/facebook.svg' %}" />
+                </a>
+            </li>
+            <li>
+                <a data-type="google" class="google" href="#" onclick="popup(this);return false;">
+                    <img src="{% static 'catblog/svg/google.svg' %}" />
+                </a>
+            </li>
+            <div class="share-bg"></div>
+        </ul>
+    </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script async type="text/javascript" src="{% static 'catblog/scripts/common.js' %}"></script>
+</body>
+
+</html>
